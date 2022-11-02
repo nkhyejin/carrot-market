@@ -1,27 +1,27 @@
 export default function Home() {
   return (
-    <div className="bg-slate-400 py-20 px-10 flex flex-col space-y-5 min-h-screen">
-      <div className="bg-white p-6 rounded-2xl shadow-xl">
-        <span className="font-bold text-3xl">Select Item</span>
+    <div className="bg-slate-400 py-20 px-10 grid gap-10 xl:place-content-center lg:grid-cols-2 xl:grid-cols-3 min-h-screen">
+      <div className="bg-white flex flex-col justify-between p-6 rounded-2xl shadow-xl dark:bg-black">
+        <span className="font-bold text-3xl dark:text-white">Select Item</span>
         <div className="flex justify-between my-2">
           <span className="text-gray-500">Grey Chiar</span>
-          <span className="font-semibold">$19</span>
+          <span className="font-semibold dark:text-white">$19</span>
         </div>
         <div className="flex justify-between my-2">
           <span className="text-gray-500">Tooly Table</span>
-          <span className="font-semibold">$80</span>
+          <span className="font-semibold dark:text-white">$80</span>
         </div>
 
-        <div className="flex justify-between pt-2 border-t-2 border-dashed">
-          <span className="font-semibold">Total</span>
-          <span className="font-semibold">$99</span>
+        <div className="flex flex-col justify-between pt-2 border-t-2 border-dashed">
+          <span className="font-semibold dark:text-white">Total</span>
+          <span className="font-semibold dark:text-white">$99</span>
         </div>
-        <button className="mt-5 bg-blue-500 text-white p-3 text-center rounded-xl w-2/4 mx-auto active:bg-yellow hover:bg-teal-500 hover:text-black">
+        <button className="mt-5 bg-blue-500 text-white p-3 text-center rounded-xl w-2/4 mx-auto active:bg-yellow hover:bg-teal-500 hover:text-black dark:bg-black dark:text-white dark:border-2 border-white dark:hover:bg-slate-500">
           Checkout
         </button>
       </div>
       <div className="bg-white overflow-hidden rounded-2xl shadow-xl">
-        <div className="bg-blue-500 p-6 pb-14">
+        <div className="portrait:bg-indigo-600 landscape:bg-teal-500 p-6 pb-14 xl:pb-52">
           <span className="text-white text-2xl">Profile</span>
         </div>
         <div className="relative rounded-3xl bg-white -top-5 p-6">
@@ -42,8 +42,8 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="bg-white p-10 rounded-2xl shadow-xl">
-        <div className="flex mb-5 justify-between items-center">
+      <div className="bg-white p-10 rounded-2xl shadow-xl lg:col-span-2 xl:col-span-1 ">
+        <div className="flex mb-5 justify-between items-center ">
           <span>←</span>
           <div className="space-x-3">
             <span>🌟 4.9</span>
