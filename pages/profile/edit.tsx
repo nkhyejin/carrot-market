@@ -1,5 +1,6 @@
 import type { NextPage } from "next";
 import Button from "../../components/button";
+import Input from "../../components/input";
 
 const EditProfile: NextPage = () => {
   return (
@@ -15,15 +16,16 @@ const EditProfile: NextPage = () => {
         </label>
       </div>
       <div className="space-y-1">
-        <label htmlFor="email" className="text-sm font-medium text-gray-700 ">
+        {/* <label htmlFor="email" className="text-sm font-medium text-gray-700 ">
           Email address
         </label>
         <input
           id="email"
           type="email"
           required
-          className="appearance-none w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-orange-500 focus:border-orange-500"
-        />
+          className="appearance-none w-full border border-gray-300 rounded-md shadow-sm placeholder-gray-400 focus:outline-none focus:ring-orange-500 focus:border-orange-500"
+        /> */}
+        <Input label="Email address" kind="text" name="email"></Input>
       </div>
       <div className="space-y-1">
         <label htmlFor="email" className="text-sm font-medium text-gray-700 ">
